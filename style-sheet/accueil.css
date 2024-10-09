@@ -155,16 +155,41 @@ h2 {
     border-top: 1px solid rgba(0, 0, 0, 0.1); /* Ligne de séparation subtile */
 }
 
-/* Logo centré en haut de la carte */
-.tool img,
-.skill img {
-    width: 60px; /* Taille fixe pour tous les logos */
-    height: 60px; /* Taille fixe pour les logos en maintenant le ratio */
-    object-fit: contain; /* Garde le ratio de l'image */
-    margin: 0 auto; /* Centré horizontalement */
-    display: block;
+/* Conteneur général des outils et compétences */
+.tools-container,
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+/* Style des cartes de compétences et d'outils */
+.tool,
+.skill {
+    background-color: #fff; /* Fond blanc */
+    text-align: center;
+    width: 150px; /* Largeur de la carte */
+    height: 150px; /* Hauteur de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition douce pour hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+    padding: 10px; /* Ajout de padding intérieur */
+}
+
+/* Logo centré dans la carte */
+.tool img,
+.skill img {
+    max-width: 60px; /* Taille maximale du logo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centré horizontalement */
+    object-fit: contain; /* Maintenir le ratio du logo */
+}
 
 /* Texte en bas de la carte */
 .tool p,
@@ -172,8 +197,8 @@ h2 {
     font-size: 0.9rem; /* Taille du texte */
     font-weight: bold;
     color: #333;
-    margin: 0;
-    padding-top: 10px; /* Espace au-dessus du texte */
+    margin: 10px 0 0 0;
+    padding-top: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.1); /* Ligne subtile entre le logo et le texte */
 }
 
@@ -183,6 +208,7 @@ h2 {
     transform: translateY(-5px); /* Légère élévation au hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
 }
+
 
 
 /* Pied de page */
