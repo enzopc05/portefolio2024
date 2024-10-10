@@ -251,6 +251,42 @@ main {
     transform: translateY(-3px); /* Légère translation au hover */
 }
 
+/* Conteneur des détails du projet */
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espace entre les sections */
+    margin-bottom: 20px;
+}
+
+/* Aligner les icônes et le texte à gauche */
+.project-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre l'icône et le texte */
+}
+
+/* Taille des icônes */
+.project-detail img.icon {
+    width: 50px; /* Taille de l'icône ajustée */
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Les logos des langages alignés sur une ligne */
+.languages-used {
+    display: flex;
+    gap: 10px; /* Espace entre les logos des langages */
+}
+
+.languages-used .language-logo {
+    width: 30px; /* Taille des logos des langages ajustée */
+    height: 30px;
+    object-fit: contain;
+}
+
+
+
 /* Style du footer avec la couleur de l'ancien */
 footer {
     background-color: #DAAB3A; /* Couleur de ton ancien footer (Jaune doré) */
@@ -334,4 +370,3 @@ footer p {
         margin-bottom: 10px;
     }
 }
-
