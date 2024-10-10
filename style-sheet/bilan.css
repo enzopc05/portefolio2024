@@ -106,14 +106,87 @@ ul {
     margin-left: 20px;
 }
 
+/* Style du footer avec la couleur de l'ancien */
 footer {
-    background: #DAAB3A;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #DAAB3A; /* Couleur de ton ancien footer (Jaune doré) */
+    color: #fff;
+    padding: 20px 0;
 }
 
 footer .container {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les sections */
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Pour s'assurer que tout se place correctement sur mobile */
+    text-align: center;
 }
+
+/* Contact email et téléphone */
+.contact-info {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Espacement entre les lignes */
+}
+
+.contact-info a {
+    color: #fff; /* Couleur du lien en blanc */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Section des icônes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Légère mise à l'échelle au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+/* Section Copyright */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Pour les petits écrans, placer les éléments verticalement */
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .social-icons,
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
