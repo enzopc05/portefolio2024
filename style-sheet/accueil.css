@@ -75,8 +75,7 @@ nav ul li a:hover::after {
 
 /* Lorsque le header devient opaque au scroll (optionnel) */
 .header-scroll {
-    background-color: rgba(218, 171, 58, 1); /* Jaune doré sans transparence */
-}
+    background-color: rgba(218, 171, 58, 1);}
 
 
 /* Contenu principal */
@@ -175,7 +174,7 @@ h2 {
     width: 150px; /* Largeur de la carte */
     height: 150px; /* Hauteur de la carte */
     border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition douce pour hover */
     display: flex;
     flex-direction: column;
