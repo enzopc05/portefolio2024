@@ -1,28 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
 /* Style global */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #e5e7e6; /* Couleur de fond */
-    color: #333; /* Texte en couleur foncée pour un bon contraste */
+    --color: #B67332; /* Marron clair */
+    --bgColor: #EEE6D8; /* Beige clair */
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
 }
 
 /* En-tête */
 header {
-    background-color: rgba(218, 171, 58, 0.8); /* Jaune doré avec transparence (0.8) */
+    background-color: rgba(218, 171, 58, 0.8); /* Jaune doré avec transparence */
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Assure-toi que le header reste au-dessus du contenu */
-    backdrop-filter: blur(10px); /* Optionnel : Ajoute un effet de flou si tu veux */
-    transition: background-color 0.3s ease; /* Pour ajouter une transition lors du défilement si nécessaire */
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Effet de flou */
+    transition: background-color 0.3s ease;
 }
 
-/* Ajuste le conteneur du header */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -47,7 +52,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Style pour les liens du header */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -64,7 +68,7 @@ nav ul li a::after {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #EEE6D8;
+    background-color: var(--bgColor);
     transition: width 0.3s ease;
 }
 
@@ -73,25 +77,27 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Lorsque le header devient opaque au scroll (optionnel) */
+/* Lorsque le header devient opaque au scroll */
 .header-scroll {
     background-color: rgba(218, 171, 58, 1); /* Jaune doré sans transparence */
 }
 
+/* Section principale */
 main {
     padding: 40px 20px;
+    background: var(--bgColor);
 }
 
-main .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Section avec fond clair */
+/* Sections */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background: #EEE6D8; /* Beige clair */
+    background: var(--bgColor); /* Beige clair */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -104,10 +110,10 @@ section:hover {
 
 h2 {
     margin-top: 0;
-    color: #B67332; /* Marron clair */
+    color: var(--color); /* Marron clair */
 }
 
-/* Articles en disposition grille */
+/* Conteneur des articles */
 .articles-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille flexible */
@@ -134,7 +140,7 @@ h2 {
 
 .article h3 {
     margin-top: 0;
-    color: #B67332; /* Marron clair */
+    color: var(--color); /* Marron clair */
 }
 
 .article p {
@@ -166,50 +172,50 @@ h2 {
 
 .year-box h3 {
     margin-top: 0;
-    color: #B67332; /* Marron clair */
+    color: var(--color); /* Marron clair */
 }
 
 .year-box p {
     margin: 0;
 }
 
-/* Style du footer avec la couleur de l'ancien */
+/* Style du footer */
 footer {
-    background-color: #DAAB3A; /* Couleur de ton ancien footer (Jaune doré) */
+    background-color: #DAAB3A; /* Jaune doré */
     color: #fff;
     padding: 20px 0;
 }
 
 footer .container {
     display: flex;
-    justify-content: space-between; /* Espacement entre les sections */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    flex-wrap: wrap; /* Pour s'assurer que tout se place correctement sur mobile */
+    flex-wrap: wrap;
     text-align: center;
 }
 
 /* Contact email et téléphone */
 .contact-info {
-    text-align: left; /* Aligne le texte à gauche */
+    text-align: left;
 }
 
 .contact-info p {
-    margin: 5px 0; /* Espacement entre les lignes */
+    margin: 5px 0;
 }
 
 .contact-info a {
-    color: #fff; /* Couleur du lien en blanc */
-    text-decoration: none; /* Pas de soulignement pour les liens */
+    color: #fff;
+    text-decoration: none;
 }
 
 .contact-info a:hover {
-    text-decoration: underline; /* Soulignement au survol */
+    text-decoration: underline;
 }
 
-/* Section des icônes sociales */
+/* Icônes sociales */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -234,8 +240,8 @@ footer .container {
 }
 
 .social-icons a:hover {
-    transform: scale(1.1); /* Légère mise à l'échelle au survol */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Copyright */
@@ -244,7 +250,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Pour les petits écrans, placer les éléments verticalement */
+/* Petits écrans */
 @media (max-width: 768px) {
     footer .container {
         flex-direction: column;
@@ -256,4 +262,3 @@ footer p {
         margin-bottom: 10px;
     }
 }
-

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Enzo Pace</title>
     <link rel="stylesheet" href="../style-sheet/accueil.css">
-    <script src="../dev-sheet/accueil.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -38,6 +38,37 @@
             </div>
             <img class="profile-photo" src="profile.jpg" alt="Photo de profil Enzo Pace">
         </section>
+
+                <!-- Frise chronologique -->
+            <section id="timeline-section">
+
+                <ul class="timeline">
+
+                    <li style="--accent-color:#B67332" id="bts">
+                        <div class="date">2023 - 2025</div>
+                        <div class="title">BTS SIO SLAM</div>
+                        <div class="descr">Cliquez pour plus d'informations.</div>
+                    </li>
+                    <li style="--accent-color:#DAAB3A" id="eurodislog">
+                        <div class="date">2024 - Aujourd'hui</div>
+                        <div class="title">Eurodislog</div>
+                        <div class="descr">Cliquez pour plus d'informations.</div>
+                    </li>
+                    <li style="--accent-color:#E24A68" id="remax">
+                        <div class="date">2023 - 2024</div>
+                        <div class="title">RE/MAX France</div>
+                        <div class="descr">Cliquez pour plus d'informations.</div>
+                    </li>
+                    <li style="--accent-color:#4CADAD" id="bac">
+                        <div class="date">2021 - 2023</div>
+                        <div class="title">Baccalauréat STI2D</div>
+                        <div class="descr">Cliquez pour plus d'informations.</div>
+                    </li>
+                </ul>
+                
+            </section>
+                <div class="credits"><a target="_blank" href="https://www.freepik.com/free-vector/infographic-template-with-yearly-info_1252895.htm">inspired by</a></div>
+                
 
         <!-- Compétences Techniques -->
         <section id="skills">
@@ -116,49 +147,65 @@
                 </div>
             </div>
         </section>
-
-        <!-- Expérience professionnelle -->
-        <section id="experience">
-            <h2>Expérience Professionnelle</h2>
-            <p><strong>Assistant chef de projet IT</strong> – RE/MAX France (08/2023 - 08/2024)</p>
-            <ul>
-                <li>Support informatique auprès des franchises</li>
-                <li>Mise à disposition de flux XML</li>
-                <li>Gestion des bugs et résolution de problèmes sur le CRM</li>
-            </ul>
-        </section>
-
-        <!-- Formation -->
-        <section id="formation">
-            <h2>Formation</h2>
-            <ul>
-                <li><strong>BTS Systèmes Informatiques aux Organisations (SLAM)</strong>, ESIEE-IT (09/2023 - 07/2025)</li>
-                <li><strong>Baccalauréat Sciences et Technologies de l'Industrie (Mention Bien)</strong>, Lycée Jean Perrin (2021 - 2023)</li>
-            </ul>
-        </section>
-    </div>
-</main>
-
-<footer>
-    <div class="container">
-        <!-- Section des informations personnelles (email et téléphone) -->
-        <div class="contact-info">
-            <p><strong>Email :</strong> <a href="mailto:enzopace05@gmail.com">enzopace05@gmail.com</a></p>
-            <p><strong>Téléphone :</strong> 06 16 25 49 14</p>
+    
         </div>
-        
-        <!-- Section des icônes sociales -->
-        <div class="social-icons">
-            <a href="https://linkedin.com" target="_blank"><img src="../picture/logo-linkedin-noir.jpg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/enzo.sunchine/profilecard/?igsh=bHphdDNjeHd3aHdj" target="_blank"><img src="../picture/logo-instagram-noir-png.jpg" alt="Instagram"></a>
-            <a href="https://github.com/enzopc05" target="_blank"><img src="../picture/githublogo-removebg-preview.png" alt="GitHub"></a>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <!-- Section des informations personnelles (email et téléphone) -->
+            <div class="contact-info">
+                <p><strong>Email :</strong> <a href="mailto:enzopace05@gmail.com">enzopace05@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> 06 16 25 49 14</p>
+            </div>
+            
+            <!-- Section des icônes sociales -->
+            <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank"><img src="../picture/logo-linkedin-noir.jpg" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/enzo.sunchine/profilecard/?igsh=bHphdDNjeHd3aHdj" target="_blank"><img src="../picture/logo-instagram-noir-png.jpg" alt="Instagram"></a>
+                <a href="https://github.com/enzopc05" target="_blank"><img src="../picture/githublogo-removebg-preview.png" alt="GitHub"></a>
+            </div>
+    
+            <!-- Section Copyright -->
+            <p>© Enzo Pace 2024</p>
         </div>
-
-        <!-- Section Copyright -->
-        <p>© Enzo Pace 2024</p>
+    </footer>
+    
+<!-- Pop-ups -->
+<div id="modal-bts" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Détails sur le BTS SIO SLAM</h2>
+        <p>Le BTS SIO SLAM est une formation spécialisée en développement logiciel...</p>
     </div>
-</footer>
+</div>
 
+<div id="modal-remax" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Détails sur RE/MAX France</h2>
+        <p>Stage en tant qu'assistant chef de projet IT chez RE/MAX France...</p>
+    </div>
+</div>
 
-</body>
-</html>
+<div id="modal-eurodislog" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Détails sur Eurodislog</h2>
+        <p>Expérience actuelle chez Eurodislog en tant que support IT...</p>
+    </div>
+</div>
+
+<div id="modal-bac" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Détails sur le Baccalauréat STI2D</h2>
+        <p>Obtention du Baccalauréat en Sciences et Technologies de l'Industrie...</p>
+    </div>
+</div>
+    
+    <script src="../dev-sheet/accueil.js"></script>
+    
+    </body>
+    </html>
+    
