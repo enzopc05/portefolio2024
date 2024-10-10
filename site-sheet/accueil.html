@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Enzo Pace</title>
     <link rel="stylesheet" href="../style-sheet/accueil.css">
+    <script src="../dev-sheet/accueil.js"></script>
 </head>
 <body>
 
@@ -14,6 +15,7 @@
         <h1>Enzo Pace - Portfolio</h1>
         <nav>
             <ul>
+                <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="entreprise.html">Entreprise</a></li>
                 <li><a href="realisations.html">Réalisations</a></li>
                 <li><a href="veille.html">Veille</a></li>
@@ -36,13 +38,11 @@
             </div>
             <img class="profile-photo" src="profile.jpg" alt="Photo de profil Enzo Pace">
         </section>
-        
 
         <!-- Compétences Techniques -->
         <section id="skills">
             <h2>Compétences Techniques</h2>
-                <div class="skills-container">
-
+            <div class="skills-container">
                 <div class="skill">
                     <img src="../picture/pythonlogo-removebg-preview.png" alt="Python Logo">
                     <p>Python</p>
@@ -79,6 +79,10 @@
                     <img src="../picture/csharplogo-removebg-preview.png" alt="C# Logo">
                     <p>C#</p>
                 </div>
+                <div class="skill">
+                    <img src="../picture/phplogo-removebg-preview.png" alt="PHP Logo">
+                    <p>PHP</p>
+                </div>
             </div>
         </section>
 
@@ -88,7 +92,7 @@
             <div class="tools-container">
                 <div class="tool">
                     <img src="../picture/vscodelogo-removebg-preview.png" alt="VS Code Logo">
-                    <p>Visual Studio Code</p>
+                    <p>VS Code</p>
                 </div>
                 <div class="tool">
                     <img src="../picture/IntelliJ_IDEA_Icon.svg-removebg-preview.png" alt="IntelliJ Logo">
@@ -107,7 +111,7 @@
                     <p>Notion</p>
                 </div>
                 <div class="tool">
-                    <img src="path/to/git-logo.png" alt="Git Logo">
+                    <img src="../picture/gitlogo-removebg-preview.png" alt="Git Logo">
                     <p>Git</p>
                 </div>
             </div>
@@ -132,24 +136,29 @@
                 <li><strong>Baccalauréat Sciences et Technologies de l'Industrie (Mention Bien)</strong>, Lycée Jean Perrin (2021 - 2023)</li>
             </ul>
         </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul class="contact-info">
-                <li><strong>Email :</strong> <a href="mailto:enzopace05@gmail.com">enzopace05@gmail.com</a></li>
-                <li><strong>Téléphone :</strong> 06 16 25 49 14</li>
-                <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/enzo-pace-15811a266/" target="_blank">Enzo Pace</a></li>
-            </ul>
-        </section>
     </div>
 </main>
 
 <footer>
     <div class="container">
-        <p>Passez du temps à découvrir mes projets ! Je vous invite à consulter les différents travaux que j'ai réalisés, de la création de sites web à la gestion de projets IT.</p>
+        <!-- Section des informations personnelles (email et téléphone) -->
+        <div class="contact-info">
+            <p><strong>Email :</strong> <a href="mailto:enzopace05@gmail.com">enzopace05@gmail.com</a></p>
+            <p><strong>Téléphone :</strong> 06 16 25 49 14</p>
+        </div>
+        
+        <!-- Section des icônes sociales -->
+        <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank"><img src="../picture/logo-linkedin-noir.jpg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/enzo.sunchine/profilecard/?igsh=bHphdDNjeHd3aHdj" target="_blank"><img src="../picture/logo-instagram-noir-png.jpg" alt="Instagram"></a>
+            <a href="https://github.com/enzopc05" target="_blank"><img src="../picture/githublogo-removebg-preview.png" alt="GitHub"></a>
+        </div>
+
+        <!-- Section Copyright -->
+        <p>© Enzo Pace 2024</p>
     </div>
 </footer>
+
 
 </body>
 </html>

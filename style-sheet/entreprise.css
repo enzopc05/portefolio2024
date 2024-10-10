@@ -7,13 +7,21 @@ body {
     color: #333; /* Texte en couleur foncée pour un bon contraste */
 }
 
+/* En-tête */
 header {
-    background: #DAAB3A; /* Jaune doré */
+    background-color: rgba(218, 171, 58, 0.8); /* Jaune doré avec transparence (0.8) */
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assure-toi que le header reste au-dessus du contenu */
+    backdrop-filter: blur(10px); /* Optionnel : Ajoute un effet de flou si tu veux */
+    transition: background-color 0.3s ease; /* Pour ajouter une transition lors du défilement si nécessaire */
 }
 
+/* Ajuste le conteneur du header */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -38,16 +46,37 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Style pour les liens du header */
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-nav ul li a:hover {
-    color: #EEE6D8; /* Beige clair */
+/* L'élément de soulignement (invisible au départ) */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #EEE6D8;
+    transition: width 0.3s ease;
 }
+
+/* Soulignement visible au hover */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Lorsque le header devient opaque au scroll (optionnel) */
+.header-scroll {
+    background-color: rgba(218, 171, 58, 1); /* Jaune doré sans transparence */
+}
+
 
 main {
     padding: 40px 20px;
