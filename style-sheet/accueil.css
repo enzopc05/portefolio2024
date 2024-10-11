@@ -173,7 +173,7 @@ h2 {
 /* Style des cartes de compétences et d'outils */
 .tool,
 .skill {
-    background-color: #fff; /* Fond blanc */
+    background-color: #e5e7e6; /* Fond gris clair */
     text-align: center;
     width: 150px; /* Largeur de la carte */
     height: 150px; /* Hauteur de la carte */
@@ -307,7 +307,7 @@ h2 {
 
 #timeline-section ul.timeline li .title,
 #timeline-section ul.timeline li .descr {
-    background: var(--bgColor);
+    background: #e5e7e6;
     position: relative;
     padding-inline: 1.5rem;
 }
